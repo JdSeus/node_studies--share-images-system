@@ -7,7 +7,7 @@ describe("Cadastro de usuário",() => {
     test("Deve cadastrar um usuário com sucesso", () => {
 
         let time = Date.now();
-        let email = 'teste${time}@teste.com';
+        let email = `teste${time}@teste.com`;
         let user = {name: "Teste", email: email, password: "123456"};
 
         return request.post("/user")
