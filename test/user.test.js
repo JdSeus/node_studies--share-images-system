@@ -111,7 +111,7 @@ describe("Autenticação", () => {
         .send({email: mainUser.email, password: "HUUygUgY8U177zVGY6"})
         .then( res => {
             expect(res.statusCode).toEqual(403);
-            expect(res.body.errors.password).toEqual("Senha incorreta!");
+            expect(res.body.errors.password).toEqual("Senha incorreta");
         })
         .catch(err => {
             fail(err);
