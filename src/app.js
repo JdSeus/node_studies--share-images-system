@@ -3,6 +3,7 @@ let app = express();
 let mongoose = require("mongoose");
 let user = require("./models/User");
 let bcrypt = require("bcrypt");
+let jwt = require("jsonwebtoken");
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
